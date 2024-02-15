@@ -1,0 +1,210 @@
+body,
+html {
+  height: auto;
+}
+:root {
+  background-color: yellowgreen;
+}
+.bg {
+  /* The image used */
+  background-image: url(https://png.pngtree.com/background/20210714/original/pngtree-cartoon-fox-lion-giraffe-owl-animal-background-picture-image_1236670.jpg);
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-repeat: repeat-y;
+}
+
+.topnav {
+  background-color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topnav:nth-child(2) {
+  align-items: center;
+  justify-content: center;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #04aa6d;
+  color: white;
+}
+
+.nav-list {
+  height: 45px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  padding: 0;
+  font-size: rem;
+}
+
+.rectangle {
+  height: 100%;
+  width: 50%;
+  color: white;
+  background-color: rgb(77, 77, 77);
+  border-radius: 7px;
+  text-align: center;
+  vertical-align: middle;
+  justify-content: center;
+  align-items: center;
+  padding: 5vh;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 1;
+}
+
+img:hover {
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0;
+}
+
+.text_format {
+  font-size: 30px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.header {
+  display: inline-block;
+  height: 20px;
+  width: 97.9%;
+  background: yellowgreen;
+  transition: all 0.6s;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+}
+
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: yellowgreen;
+  color: black;
+  text-align: center;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+li {
+  text-decoration: none;
+}
+
+.dropdown {
+  width: 30px;
+}
+
+.dropbtn {
+  background-color: #333;
+  width: 100%;
+  border: none;
+  font-size: 2.5rem;
+  color: white;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  align-items: center;
+  margin: 20px;
+  z-index: 99999;
+}
+
+.dropdown:hover .dropbtn {
+  transform: rotate(90deg);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #161616;
+  min-width: 30px;
+  right: 0px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.nav-input {
+  margin: 10px;
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.images {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.image-container {
+  display: inline-block;
+  position: relative;
+}
+
+.text-block {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #333;
+}
+
+.image-container:hover .text-block {
+  opacity: 1;
+}
+
+.texts {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 35%;
+  left: 30%;
+  text-align: center;
+}
+
+#centerpls {
+  text-align: center;
+}

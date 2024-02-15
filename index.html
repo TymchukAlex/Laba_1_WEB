@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+  </head>
+  <body class="bg">
+    <header class="header">Обережно, поганий сайт</header>
+    <nav class="topnav">
+      <ul class="nav-list">
+        <li class="nav-element"><a href="index.html">Home</a></li>
+        <li class="nav-element"><a href="news.html">News</a></li>
+        <li class="nav-element"><a href="questioner.html">Contact</a></li>
+        <li class="nav-element"><a href="converter.html">Beast`s food</a></li>
+      </ul>
+        <input type="text" class="nav-input" placeholder="Search">
+        <div class="dropdown">
+          <button class="dropbtn">≡</button>
+          <div class="dropdown-content">
+            <a href="#">Login</a>
+            <a href="#">Register</a>
+          </div>
+        </div>
+    </nav>
+    <div id="centerpls">
+      <p>Перевести одні величини у інші за вибором ( кілограми у паунди).</p>
+    <div>
+        <input type="number" id="pounds"/>
+        <input type="number" id="kilos"/>
+        <button onclick="calculate()">calculate</button>
+    </div>
+    <p>Вводиться невід’ємне ціле число. У залежності від суми
+      виводити поряд з числом правильний варіант написання гривні. Наприклад, 241 гривня,
+      242 гривні, тощо</p>
+    <div>
+      <input type="number" id="hryvnias"/>
+      <button onclick="hryvnias()" id="buttontochange">press to know</button>
+    </div>
+    <p>У введеному тексті забрати зайві пробіли між словами та перед пунктуаційними знаками.</p>
+    <div>
+      <input type="text" id="texttoease"/>
+      <button onclick="nospaces()">Go!</button>
+    </div>
+  </div>
+    <script src="scripts/converter.js"></script>
+  </body>
+</html>
